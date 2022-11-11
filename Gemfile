@@ -31,6 +31,11 @@ gem "rake", "~> 13.0"
 # Provides functionality to interact with a SQLite3 database
 gem "sqlite3", "~> 1.4"
 
+group :production do
+  gem 'pg'
+end
+
+
 gem "faker", "~> 2.18"
 
 # Require all files in a folder
@@ -54,6 +59,3 @@ group :test do
 end
 
 
-group :production do
-  gem 'pg'
-end
